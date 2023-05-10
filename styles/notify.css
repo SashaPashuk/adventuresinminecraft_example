@@ -1,0 +1,49 @@
+#success{
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #8bc34a;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  max-width: 400px;
+  min-height: 45px;
+  z-index: 10;
+}
+#error{
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #ce0a0a;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  max-width: 400px;
+  z-index: 10;
+  padding: 7px;
+}
+#error p{
+  margin: 0;
+}
+@keyframes notify{
+  0%{
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  25%{
+    transform: translate(-50%, 0);
+    opacity: 100%;
+  }
+  75%{
+    transform: translate(-50%, 0);
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0;
+  }
+}

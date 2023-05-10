@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  background: url("../img/bg.png") no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: #111;
+  color: #dfdfdf;
+  font-family: 'Comfortaa', cursive;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.25s;
+}
+
+.logo:hover{
+  text-shadow: 0 0 12px #dfdfdf;
+}
+
+.nav .logo{
+  margin-right: 32px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px;
+  background-color: rgba(92, 36, 235,0.5);
+  backdrop-filter: blur(3px);
+  overflow: hidden;
+  z-index: 3;
+  transition: 0.25s;
+}
+
+header .nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: 0.25s;
+}
+
+header .nav li{
+  display: inline;
+  margin-right: 32px;
+  position: relative;
+}
+
+header .nav li a{
+  position: relative;
+  text-decoration: none;
+  color: #dfdfdf;
+}
+
+.navElem::after{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 3px;
+  border-radius: 7px;
+  background-color: #dfdfdf;
+  left: 0;
+  bottom: 0;
+  transform: translate(0, 10px);
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+.navElem:hover::after{
+  opacity: 100%;
+  width: 85%;
+}
+
+#navBtn{
+  font-size: 24px;
+  display: none;
+}
+
+#minNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+

@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+  background-color: #777;
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #444;
+}
+@media (max-width: 700px){
+  #navBtn{
+    display: inline;
+  }
+  .nav{
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  #innerNav{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+    padding-bottom: 0 !important;
+    z-index: 2;
+  }
+  .navElem{
+    margin-bottom: 32px;
+  }
+  #banner{
+    flex-direction: column;
+  }
+}
+@keyframes navAnim{
+  from{
+    transform: translate(0, 100%);
+  }
+  to{
+    transform: translate(0, 0);
+  }
+}
